@@ -103,9 +103,26 @@ Una máquina virtual
 	\includegraphics[width=5cm]{./Imagenes/virtualizacion} 
 	\end{center}
 
+\subsection{Insercion de datos y Consultas de datos.}
+En este caso haremos la insercion de datos y consultas en MongoDb instalado en Docker.
+\begin{itemize}
+\item Como primer paso, se debe realizar la conexion de MongoDb:\\
+docker exec -it my-mongodb mongo
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/ins1} 
+	\end{center}
+\item Seguidamente crearemos la colección "Base De Datos2", Despues insertaremos los datos a nuestra coleccion:\\
+db.createCollection('basededatos')  
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/ins2} 
+	\end{center}
 
+\item Por ultimo vamos a consultar u obtener todo los datos con el siguiente codigo:\\
 
-
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/ins3} 
+	\end{center}
+\end{itemize} 
 \subsection{Documental}
 Cuando hablamos de bases de datos documentales, nos referimos a un conjunto de información estructurada en registros y almacenada en un soporte electrónico legible desde un ordenador. Cada uno de los registros compone una unidad autónoma de información que puede estar a su vez estructurada en diferentes campos o tipos de datos que se almacenan en dicha base de datos. Por ejemplo, entre los campos se pueden encontrar: nombre del documento, título, palabras clave que caracterizan el tema tratado en el documento, fecha o autor. Para cada uno de los documentos que componen la base de datos es necesario hacer un registro, de esta manera, se puede recuperar dicho registro y determinado documento.
 

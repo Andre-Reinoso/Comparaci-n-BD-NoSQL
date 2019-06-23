@@ -133,33 +133,52 @@ En consecuencia, este tipo de bases de datos tiende a almacenar pocos datos de l
 \end{itemize} 
 
 \subsection{Column-Store}
-El objetivo pri
+Es un tipo de base de datos que almacena datos utilizando un modelo orientado a columnas.
+\\
+\\
+	\textbf{Tambien denominadas:}
+\begin{itemize}	
 
-\begin{itemize}
-	\item Jerarquia maquina virtual
-	\\La primer gran diferencia es la jerarquia, forma de como estan constituidas. En el primero de los casos las maquinas virtuales estan constituidas por:
+	\item Column database
+	\item Column family database
+	\item Column oriented database
+	\item Wide column store
+	\item Columnar database
+	\item Columnar store
+\end{itemize} 
+Utilizan un concepto llamado  keyspace . Un keyspace es algo así como un  esquema en el modelo relacional. El keyspace contiene todas las Column Family (tipo de tablas similares  en el modelo relacional), que contienen filas, que contienen columnas.
+\\
+\\
+\textbf{Keyspace}
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/keyspace} 
+\end{center}
 
-	\begin{center}
-	\includegraphics[width=5cm]{./Imagenes/jerarquia1} 
-	\end{center}
+\textbf{Column Family}
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/columfamily} 
+\end{center}
+
+\begin{itemize}	
+
+	\item Cada fila  puede contener un número diferente de columnas a las otras filas. Y las columnas no tienen que coincidir con las columnas de las otras filas (es decir, pueden tener diferentes nombres de columnas, tipos de datos, etc.).
+	\item Cada columna  está contenida en su fila. No abarca todas las filas como en una base de datos relacional. Cada columna contiene un par de nombre / valor, junto con una marca de tiempo
+
 \end{itemize} 
 
-\begin{itemize}
-	\item Jerarquia contenedor
-	\\ \textbf{-El servidor o una computador}.
+\textbf{Construccion de una fila}
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/row} 
+\end{center}
+\begin{itemize}	
 
-	\begin{center}
-	\includegraphics[width=5cm]{./Imagenes/jerarquia2} 
-	\end{center}
+	\item \textbf{Row Key:} Cada fila tiene una clave única, que es un identificador único para esa fila.
+	\item \textbf{Column:} Cada columna contiene un nombre, un valor y una marca de tiempo.
+	\item \textbf {Name:} Este es el nombre del par name/value.
+	\item \textbf{Value:} Este es el valor del par name/value.
+	\item \textbf{Timestamp:} Esto proporciona la fecha y la hora en que se insertaron los datos. Esto se puede utilizar para determinar la versión más reciente de los datos.
 \end{itemize} 
 
-\begin{itemize}
-	\item Los contenedores permiten desplegar aplicaciones más rápido, arrancarlas y pararlas más rápido y aprovechar mejor los recursos de hardware.
-
-
-
-
-\end{itemize} 
 
 \section{Conclusiones}
 

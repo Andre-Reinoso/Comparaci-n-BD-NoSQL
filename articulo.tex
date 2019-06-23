@@ -49,7 +49,7 @@
 
 \pretitle{\begin{center}\Huge\bfseries} % Article title formatting
 \posttitle{\end{center}} % Article title closing formatting
-\title{Virtualizacion y Contenedores} % Article title
+\title{Comparación Bases de datos NoSQL} % Article title
 \author{Andre Reinoso, Samuel Nuñez, Andres De la Barra ,David Damian y Richard Cruz}
 \date{\today} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
@@ -73,9 +73,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Introduccion}
-
-\lettrine[nindent=0em,lines=3]{L}a virtualiza
-
+\lettrine[nindent=0em,lines=3]{L}as bases de datos son una de las tecnologías para la organización de la información más eficientes y poderosas de que disponemos en la actualidad. De hecho, las bases de datos están en el núcleo de los sistemas y de los servicios de información que poseen mayor significación tanto desde un punto de vista económico como social. Por ejemplo, la mayor parte de los sistemas de información empresarial, desde el control de existencias de almacén hasta el sistema de ventas, tiene en su núcleo una base de datos. En el seno de muchas actividades sociales vinculadas con la gestión del conocimiento sucede otro tanto: desde la gestión de archivos y museos hasta la automatización de centros de documentación, pasando por los mejores servicios de información en Internet o por la gestión de investigaciones académicas, todos estos sistemas tienen una base de datos en su núcleo. En el presente articulo se desarrollara el tema de bases de datos NoSQL.
 
 
 %------------------------------------------------
@@ -106,6 +104,55 @@ Una máquina virtual
 	\end{center}
 
 
+
+
+\subsection{Documental}
+Cuando hablamos de bases de datos documentales, nos referimos a un conjunto de información estructurada en registros y almacenada en un soporte electrónico legible desde un ordenador. Cada uno de los registros compone una unidad autónoma de información que puede estar a su vez estructurada en diferentes campos o tipos de datos que se almacenan en dicha base de datos. Por ejemplo, entre los campos se pueden encontrar: nombre del documento, título, palabras clave que caracterizan el tema tratado en el documento, fecha o autor. Para cada uno de los documentos que componen la base de datos es necesario hacer un registro, de esta manera, se puede recuperar dicho registro y determinado documento.
+
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/documental} 
+\end{center}
+
+
+Una base de datos documental utiliza documentos como la estructura para almacenamiento y consultas. En este caso, el término "documento" puede referirse a un documento de texto, pero comúnmente también puede un archivo de XML o JSON. En lugar de columnas con nombres y tipos de datos que se utilizan en una base de datos relacional, un documento contiene una descripción del tipo de datos y el valor de esa descripción.
+\\
+	\textbf{Tipos de bases de datos documentales:}
+\begin{itemize}	
+
+	\item Bases de datos a texto completo
+	\item Bases de datos referenciales
+	\item Multidisciplinares
+	\item Especializadas
+	\item Bases de datos de acceso local
+	\item Bases de datos en CD ROM
+\item Bases de datos en línea
+\end{itemize} 
+
+	\textbf{Ventajas:}
+\\
+Hoy en día las empresas tienen que trabajar con una gran cantidad de documentación y es muy complicado gestionar todos los documentos diarios que se generan. Por este motivo, ahora más que nunca, es imprescindible contar con un sistema de bases de datos documental en la empresa. Estas son algunas de las ventajas que aporta el uso de las bases de datos documentales:
+\begin{itemize}	
+
+	\item Capaces de almacenar cualquier tipo de información en forma de texto.
+	\item Facilidad de poder manejar una gran cantidad de información, de forma rápida y en muy poco tiempo.
+	\item Aumenta el rendimiento general de la empresa al poder recuperar los documentos de forma ágil y fácil.
+	\item Poseen un lenguaje de consulta fácil e intuitivo.
+	\item Capaz de manejar una gran cantidad de datos.
+	\item Escalabilidad y ahorro de espacio.
+
+\end{itemize} 
+
+
+
+\subsection{Clave - Valor}
+Una base de datos clave-valor es un tipo de base de datos no relacional que utiliza un método simple de clave-valor para almacenar datos. Una base de datos clave-valor almacena datos como un conjunto de pares clave-valor en los que una clave sirve como un identificador único. Tanto las claves como los valores pueden ser cualquier cosa, desde objetos simples hasta objetos compuestos complejos. Las bases de datos clave-valor son altamente divisibles y permiten el escalado horizontal a escalas que otros tipos de bases de datos no pueden alcanzar.
+Las claves pueden ser organizadas por grupos clave lógicos, requiriendo solamente estas claves para ser únicas dentro de su propio grupo. Esto permite tener claves idénticas en diferentes grupos lógicos.Algunas implementaciones del almacén de valores clave proporcionan mecanismos de almacenamiento en el caché, lo que mejora en gran medida su rendimiento.
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/clavevalor} 
+\end{center}
+
+
+Sus principales ventajas son 3: simplicidad, eficiencia y flexibilidad, que permiten unas búsquedas rápidas en lecturas a toda la BBDD, así como funciones de agregación efectivas. Por otro lado, la simplicidad también marcará sus principales inconvenientes: al carecer de estructura no es posible lanzar consultas mediante queries, y solo lo constan de una colección, complicado la implementación modelos complejos.
 
 
 \subsection{Grafos}

@@ -108,30 +108,31 @@ Una máquina virtual
 
 
 
-\subsection{¿Que es un contenedor?}
+\subsection{Grafos}
 
-Los cont
+Las bases de datos NoSQL en grafo permiten representar los datos utilizando estructuras de grafos. Un grafo es una representación abstracta de un conjunto de objetos. Los objetos de los grafos se representan mediante vértices (también llamados nodos) y aristas.
+
+\begin{center}
+	\includegraphics[width=7cm]{./Imagenes/nodos_aristas} 
+\end{center}
+
+El modelo en grafo es útil cuando los datos a almacenar tienen multitud de interrelaciones entre sí, y cuando la importancia recae más en las interrelaciones que se establecen entre los datos, que en los propios datos en sí. 
+\\
+En consecuencia, este tipo de bases de datos tiende a almacenar pocos datos de los objetos del mundo real que se desean representar pero muchos datos sobre sus interrelaciones, a diferencia de lo que acostumbra a suceder en las bases de datos relacionales, donde hay muchos datos de los objetos (representados mayoritariamente en las propiedades o atributos de las relaciones) y pocas interrelaciones entre los objetos (representadas mediante claves foráneas). 
+
 
 \begin{itemize}
-\item Docker
-\\ Éste con
-
-
+\item Ejemplo
+\\ A continuación podemos ver un ejemplo simple en el que hemos creado un grafo con dos tweets (en color verde) y dos usuarios de Twitter (en color azul). Como vemos, los tweets y los usuarios se han etiquetado con las etiquetas “Tweet” y “TwitterUser” para indicar su tipo. Vemos también que uno de los tweets es un reply (se indica mediante una relación con una etiqueta “Reply”) y que los dos usuarios de Twitter se siguen mútuamente (se indica mediante la etiqueta “Follows”). También se indican los autores de cada tweet (mediante la etiqueta “Author”).
 
 
 \begin{center}
-	\includegraphics[width=5cm]{./Imagenes/docker} 
-	\end{center}
+	\includegraphics[width=7cm]{./Imagenes/tweet} 
+\end{center}
 
-Ventajas
-\\ \textbf{- Las instancias se inician en pocos segundos.}
-
-
-Desventajas
-\\ \textbf{- Sólo puede usarse de forma nativa en entornos Unix con Kernel igual o superior a 3.8.}
 \end{itemize} 
 
-\subsection{¿Diferencia entre maquinas virtuales y contenedores?}
+\subsection{Tabular Column-Store}
 El objetivo pri
 
 \begin{itemize}

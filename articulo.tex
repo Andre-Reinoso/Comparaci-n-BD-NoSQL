@@ -179,6 +179,20 @@ Utilizan un concepto llamado  keyspace . Un keyspace es algo así como un  esque
 	\item \textbf{Timestamp:} Esto proporciona la fecha y la hora en que se insertaron los datos. Esto se puede utilizar para determinar la versión más reciente de los datos.
 \end{itemize} 
 
+\subsection{Comparando tipos de base de datos  NoSQL}
+Más allá de las ventajas y desventajas que podamos encontrar en los tipos de bases de datos NoSQL, creemos que cada tipo de base de datos se puede aprovechar de una forma especial para un fin determinado. \\
+Un grupo de ingenieros se reunieron para estudiar una comparación de calidad entre tres bases de datos populares de distintos tipos (Redis, Neo4j y MongoDB) aplicando un caso de uso real para cada tipo. El objetivo de ellos era el de evaluar las diferencias inherentes entre las bases de datos al definir los datos. \\
+De acuerdo con la comparación que hicieron, pudieron inferir los siguientes hallazgos:
+
+\begin{itemize}	
+	\item Las basadas en grafos están diseñadas para ser adecuadas para representar datos fuertemente vinculados y relaciones intensivas como redes sociales, datos geográficos y bioinformática.
+	\item Las basadas en documentos son adecuadas para administrar colecciones con relaciones abstractas.
+	\item Las basadas en clave-valor son adecuadas cuando las relaciones no son un problema, como recuperar información sobre los nombres de productos favoritos de los clientes, los carritos de la compra y la sesión de un usuario.
+	\item Se puede considerar la combinación de más de un tipo de base de datos para cumplir con más de uno de los objetivos anteriores
+\end{itemize}
+
+Ellos encontraron que las bases de datos basadas en grafos eran la mejor opción cuando se trataba de relaciones intensivas. Las bases de datos basadas en documentos eran mejor cuando se trataba de colecciones y relaciones abstractas. Finalmente, las bases de datos clave-valor eran las mejores cuando las relaciones no eran un problema. \\
+Pero siempre, como último objetivo fue el de ayudar a las organizaciones a encontrar bases de datos NoSQL acecuados y que se adapten a sus necesidades. 
 
 \section{Conclusiones}
 
